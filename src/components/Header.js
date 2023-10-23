@@ -8,7 +8,7 @@ function Header() {
     <div className='text-3xl text-red-500 flex justify-between font-bold p-3 border-b-2 border-gray-500'>
       <Link to='/card'><span>Movie<span className='text-white'>World</span></span></Link>
       {useAppstate.login?
-        <Link to='/'><h1 className='text-lg text-white cursor-pointer'>
+        <Link to='/addmovie'><h1 className='text-lg text-white cursor-pointer'>
         <button className='bg-black pr-2 btn'><AddIcon className='m-3' />
           Add New
         </button>
