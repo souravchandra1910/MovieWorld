@@ -61,7 +61,7 @@ const Signup = () => {
           buttons: false,
           timer: 3000,
         });
-        navigate('/')
+        navigate('/card')
         setLoading(false);
       })
     } catch (error) {

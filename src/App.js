@@ -18,10 +18,10 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path='/' element={<Cards />} />
+          <Route path='/' element={<Login/>} />
           <Route path='/addmovie' element={<AddMovie />} />
           <Route path='/detail/:id' element={<Details />} />
-          <Route path='/login' element={<Login/>} />
+          <Route path='/card' element={<Cards/>}/>
           <Route path='/signup' element={<Signup/>} />
         </Routes>
       </div>

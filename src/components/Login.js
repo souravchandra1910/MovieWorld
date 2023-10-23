@@ -34,7 +34,7 @@ function Login() {
             buttons: false,
             timer: 3000
           })
-          navigate('/')
+          navigate('/card')
         } else {
           swal({
             title: "Invalid Credentials",

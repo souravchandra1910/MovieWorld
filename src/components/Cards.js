@@ -19,7 +19,7 @@ function Cards() {
     getData();
   }, []);
   return (
-    <div className="flex flex-wrap justify-between px-1 mt-2">
+    <div className="flex flex-wrap justify-between mt-2">
     {loading ? <div className="w-full flex justify-center items-center h-96"><ColorRing
         visible={true}
         height="80"
@@ -31,8 +31,8 @@ function Cards() {
       /></div> : 
       data.map((e, i) => {
         return (
-          <Link to={`/detail/${e.id}`}><div key={i} className="card font-medium shadow-lg p-2 hover:-translate-y-3 cursor-pointer mt-6 transition-all duration-500">
-            <img className="h-60 md:h-72" src={e.image} />
+          <Link to={`/detail/${e.id}`}><div key={i} className="card font-medium shadow-lg  hover:-translate-y-3 cursor-pointer mt-7 p-0.5 transition-all duration-500">
+            <img className="h-60 md:h-55" src={e.image} />
             <h1>
               {e.title}
             </h1>
