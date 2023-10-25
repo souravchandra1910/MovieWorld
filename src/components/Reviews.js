@@ -17,7 +17,7 @@ function Reviews({ id, prevRating, userRated }) {
     try {
       await addDoc(reviewsRef, {
         movieId:  id ,
-        name: "Sourav Chandra",
+        name: "",
         rating: rating,
         thoughts: form,
         timestamp: new Date().getTime()
